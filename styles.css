@@ -1,0 +1,186 @@
+/* Reset para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Padding e a borda incluídos na largura e altura total dos elementos */
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo para o cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamanho da fonte */
+    color: #0fefdc; /* Cor do texto */
+}
+
+
+/* Estilo para a navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Exibe os itens da lista lado a lado */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaço entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Sem sublinhado nos links */
+    font-weight: bold; /* Texto dos links em negrito */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo */
+    margin: 20px auto; /* Margem para espaçamento em volta do conteúdo */
+    width: 80%; /* Largura do conteúdo */
+    max-width: 800px; /* Largura máxima */
+    border: 1px solid #ddd; /* Borda ao redor */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Container 'Sobre Mim' */
+.sobre-mim-container {
+    display: flex; /* Alinhando itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente os itens dentro do container */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+/* Imagem 'Sobre Mim' */
+.foto-sobre-mim {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem se ajuste ao espaço sem distorção */
+}
+
+/* Biografia 'Sobre Mim' */
+.bio-sobre-mim {
+    flex: 1; /* Biografia ocupando o espaço restante */
+    color: #333; /* Cor do texto */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa o rodapé no fundo da página */
+    bottom: 0; /* Alinha o rodapé ao fundo */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+}
+
+/* Container de cada projeto */
+.projeto {
+    display: flex; /* Alinhar imagem e texto lado a lado */
+    align-items: center; /* Centraliza verticalmente os itens do projeto */
+    margin-bottom: 20px; /* Espaçamento entre os projetos */
+    gap: 20px; /* Espaço entre a imagem e a descrição */
+}
+
+/* As imagens dos projetos */
+.imagem-projeto {
+    width: 200px; /* Largura das imagen */
+    height: 150px; /* Altura das imagens */
+    border-radius: 5px; /* Borda levemente arredondada */
+    object-fit: cover; /* Imagem ajustada ao espaço sem distorção */
+}
+
+/* Descrição do projeto */
+.descricao-projeto {
+    flex: 1; /* A descrição ocupa o espaço restante */
+}
+
+p {
+    margin-bottom: 20px; /* Margem inferior de 20 pixels a cada parágrafo */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Seção do portfólio */
+.project {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: contain; /* Propriedade para exibir a imagem inteira */
+    display: block; /* Faz com que a imagem ocupe a largura total do contêiner */
+
+}
+
+.project h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.project p {
+    color: #666;
+}
+
+/* Título principal da seção */
+#formacao h2 {
+    margin-bottom: 40px; /* Aumenta espaço abaixo do título principal */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid #333; /* Borda ao redor do título */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f4f4f4; /* Cor de fundo leve para o título */
+    color: rgb(4, 7, 20);
+}
+
+/* Subtítulos dentro da seção */
+#formacao h3 {
+    margin-top: 30px; /* Mais espaço acima dos subtítulos */
+    margin-bottom: 15px; /* Mais espaço abaixo dos subtítulos */
+}
+
+/* Seção de contato */
+#contato h2 {
+    margin-bottom: 20px; /* Mais espaço abaixo do título "Contato" */
+    text-align: center; /* Centraliza o título */
+    border: 2px solid #333; /* Borda ao redor do título */
+    padding: 10px; /* Aumenta um pouco de espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
+/* Informações de contato */
+#contato p {
+    margin-bottom: 15px; /* Espaço entre as informações de contato */
+}
+
+.info-contato p {
+    margin-bottom: 10px; /* Espaçamento entre todos os parágrafos dentro de .info-contato */
+}
+
+.mensagem-final {
+    margin-top: 15px; /* Espaçamento específico antes da mensagem final */
+}
